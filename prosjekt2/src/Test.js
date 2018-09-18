@@ -10,6 +10,7 @@ class Test extends Component {
             <div className="visual-display">
                 <div className="title">
 
+
                 </div>
                 <div className="tab-container">
                   <div className="tab" id="0"></div>
