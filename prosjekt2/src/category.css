@@ -2,6 +2,11 @@
     margin-left: 2vw;
 }
 
+.radioGroup {
+    padding-top: 5vh;
+}
+
 .radioButton {
+
     display: block;
 }
