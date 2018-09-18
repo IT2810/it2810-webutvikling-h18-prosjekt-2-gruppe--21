@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Test.css';
+import {Category} from './Category.js';
 
 class Test extends Component {
   render() {
@@ -9,8 +10,6 @@ class Test extends Component {
         <div className="grid-container">
             <div className="visual-display">
                 <div className="title">
-
-
                 </div>
                 <div className="tab-container">
                   <div className="tab" id="0"></div>
@@ -27,7 +26,7 @@ class Test extends Component {
                 
             </div>
             <div className="categories">
-            <h1>TEST</h1>
+                <Category />
             </div>
       </div>
     );
