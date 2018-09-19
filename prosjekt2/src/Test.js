@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./Test.css";
 import { Category } from "./Category.js";
 import { Image } from "./Image.js";
+import { Poem } from "./Poem.js";
 
 let imageDiv;
 
@@ -36,7 +37,9 @@ class Test extends Component {
           <div className="image" ref={this.myInput}>
             <Image />
           </div>
-          <div className="poem" />
+          <div className="poem">
+            <Poem />   
+          </div>
         </div>
         <div className="categories">
           <Category />
