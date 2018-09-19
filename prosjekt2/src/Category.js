@@ -1,52 +1,48 @@
+import React, { Component } from "react";
 
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './category.css';
+export default class Category extends Component {
+  state = {
+    title: this.props.title,
+    cat1: this.props.cat1,
+    cat2: this.props.cat2,
+    cat3: this.props.cat3,
+    parent: this.props.parent,
+    currentCategory: 0
+  };
 
-export class Category extends Component {
+  onChecked = categoryIndex => {
+    this.setState(
+      { currentCategory: categoryIndex },
+      this.props.parent.handleChecked(this)
+    );
+  };
+
   render() {
     return (
-      <div className="radioButtons">
-        <div className="radioGroup" id="1">
-            <h2>Image</h2>
-            <label className="radioButton">Skog og bekkefar</label>
-            <input type = "radio"
-              name = "image"/>
-             <label className="radioButton">Fugler og hav</label>
-            <input type = "radio"
-              name = "image"/>
-            <label className="radioButton">Fjell og vidde</label>
-            <input type = "radio"
-              name = "image"/>
-        </div>
-        <div className="radioGroup" id="2">
-            <h2>Sound</h2>
-            <label className="radioButton">Skog og bekkefar</label>
-            <input type = "radio"
-              name = "sound"/>
-            <label className="radioButton">Fugler og hav</label>
-            <input type = "radio"
-              name = "sound"/>
-            <label className="radioButton">Fjell og vidde</label>
-            <input type = "radio"
-              name = "sound"/>
-              
-        </div>
-        <div className="radioGroup" id="3">
-            <h2>Text</h2>
-             <label className="radioButton">Skog og bekkefar</label>
-             <input type = "radio"
-                name = "text"/>
-             <label className="radioButton">Fugler og hav</label>
-             <input type = "radio"
-                name = "text"/>
-              <label className="radioButton">Fjell og vidde</label>
-              <input type = "radio"
-                name = "text"/> 
-        </div>
+      <div>
+        <h2>{this.props.title}</h2>
+        <input
+          type="radio"
+          name={this.state.title}
+          onClick={() => this.onChecked(0)}
+          defaultChecked={true}
+        />
+        {this.props.cat1}
+        <br />
+        <input
+          type="radio"
+          name={this.state.title}
+          onClick={() => this.onChecked(1)}
+        />
+        {this.props.cat2}
+        <br />
+        <input
+          type="radio"
+          name={this.state.title}
+          onClick={() => this.onChecked(2)}
+        />
+        {this.props.cat3}
       </div>
     );
   }
 }
-
-
