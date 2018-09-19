@@ -11,49 +11,38 @@ export class Category extends Component {
             <h2>Image</h2>
             <label className="radioButton">Skog og bekkefar</label>
             <input type = "radio"
-                name = "radSize"
-                value = "small"
-                checked = "checked" />
+              name = "image"/>
              <label className="radioButton">Fugler og hav</label>
-             <input type = "radio"
-                name = "radSize"
-                value = "medium" />
-             <label className="radioButton">Fjell og vidde</label>
-             <input type = "radio"
-                name = "radSize"
-                value = "large" /> 
+            <input type = "radio"
+              name = "image"/>
+            <label className="radioButton">Fjell og vidde</label>
+            <input type = "radio"
+              name = "image"/>
         </div>
         <div className="radioGroup" id="2">
             <h2>Sound</h2>
             <label className="radioButton">Skog og bekkefar</label>
             <input type = "radio"
-                name = "radSize"
-                value = "small"
-                checked = "checked" />
+              name = "sound"/>
             <label className="radioButton">Fugler og hav</label>
             <input type = "radio"
-                name = "radSize"
-                value = "medium" />
-              <label className="radioButton">Fjell og vidde</label>
-              <input type = "radio"
-                name = "radSize"
-                value = "large" /> 
+              name = "sound"/>
+            <label className="radioButton">Fjell og vidde</label>
+            <input type = "radio"
+              name = "sound"/>
+              
         </div>
         <div className="radioGroup" id="3">
             <h2>Text</h2>
              <label className="radioButton">Skog og bekkefar</label>
              <input type = "radio"
-                name = "radSize"
-                value = "small"
-                checked = "checked" />
+                name = "text"/>
              <label className="radioButton">Fugler og hav</label>
              <input type = "radio"
-                name = "radSize"
-                value = "medium" />
+                name = "text"/>
               <label className="radioButton">Fjell og vidde</label>
               <input type = "radio"
-                name = "radSize"
-                value = "large" /> 
+                name = "text"/> 
         </div>
       </div>
     );
