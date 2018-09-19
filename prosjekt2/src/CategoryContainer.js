@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios"
-import Category from "./Category";
+import { Category } from "./Category";
 
 export class CategoryContainer extends Component {
   state = {

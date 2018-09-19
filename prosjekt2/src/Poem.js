@@ -5,27 +5,26 @@ import axios from "axios";
 export class Poem extends Component {
 
     state = {
-        lines: []
+        data: [] 
     }
 
     componentDidMount() {
-        console.log("Hallo!");
         axios.get("/text/poem1.json")
         .then(res => {
-            const lines = res.data;
-            this.setState({ lines });
+            const data = res.data;
+            this.setState({ data });
         })
-        console.log(this.state.lines[0]);
     }
 
 
 
     render() {
-        return (
-            <div>
-                <h2> {this.state.lines[2]} </h2>         
-            </div>
+        let data = this.state.data;
+        console.log(data);
+        return (
+            <h2> </h2>
         );
    }
+
 }
 

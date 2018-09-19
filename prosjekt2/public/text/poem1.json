@@ -1,5 +1,15 @@
 {
-   line1:"Old pond",
-   line2:"A frog leaps",
-   line3:"Sound of water"
+        "text" : [
+            {
+               "line": "Old pond"
+            },
+            {
+               "line": "A frog leaps"
+            },
+            {
+               "line": "Sound of water"
+            }
+        ]
 }
+
+                  
