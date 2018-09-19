@@ -10,6 +10,7 @@ export default class Category extends Component {
     currentCategory: 0
   };
 
+
   onChecked = categoryIndex => {
     this.setState(
       { currentCategory: categoryIndex },
@@ -23,23 +24,25 @@ export default class Category extends Component {
         <h2>{this.props.title}</h2>
         <input
           type="radio"
-          name={this.state.title}
-          onClick={() => this.onChecked(0)}
-          defaultChecked={true}
+//          name={this.state.title}
+          onChange={() => this.onChecked(0)}
+          checked={this.state.currentCategory === 0}
         />
         {this.props.cat1}
         <br />
         <input
           type="radio"
-          name={this.state.title}
-          onClick={() => this.onChecked(1)}
+//          name={this.state.title}
+          onChange={() => this.onChecked(1)}
+          checked={this.state.currentCategory === 1}
         />
         {this.props.cat2}
         <br />
         <input
           type="radio"
-          name={this.state.title}
-          onClick={() => this.onChecked(2)}
+//          name={this.state.title}
+          onChange={() => this.onChecked(2)}
+          checked={this.state.currentCategory === 2}
         />
         {this.props.cat3}
       </div>

@@ -1,62 +1,63 @@
 {
-    "audio": {
-        "birds": [
-          "/sounds/birds/birds1.mp3",
-          "/sounds/birds/birds2.mp3",
-          "/sounds/birds/birds3.mp3",
-          "/sounds/birds/birds4.mp3"
+    "images": [
+        [
+          "/img/forest0.svg",
+          "/img/forest1.svg",
+          "/img/forest2.svg",
+          "/img/forest3.svg"
         ],
-        "riversWaves": [
-          "/sounds/riversWaves/river1.mp3",
-          "/sounds/riversWaves/river2.mp3",
-          "/sounds/riversWaves/waves1.mp3",
-          "/sounds/riversWaves/waves2.mp3"
+        [
+          "/img/mountain0.svg",
+          "/img/mountain1.svg",
+          "/img/mountain2.svg",
+          "/img/mountain3.svg"
         ],
-        "weather": [
-          "/sounds/weather/weather1.mp3",
-          "/sounds/weather/weather2.mp3",
-          "/sounds/weather/weather3.mp3",
-          "/sounds/weather/weather4.mp3"
+        [
+          "/img/sea0.svg",
+          "/img/sea1.svg",
+          "/img/sea2.svg",
+          "/img/sea3.svg"
         ]
-      },
-      "audio": {
-        "birds": [
-          "/sounds/birds/birds1.mp3",
-          "/sounds/birds/birds2.mp3",
-          "/sounds/birds/birds3.mp3",
-          "/sounds/birds/birds4.mp3"
+      ],
+      "texts" : [
+        [
+          "haiku0",
+          "haiku1",
+          "haiku2",
+          "haiku3"
         ],
-        "riversWaves": [
-          "/sounds/riversWaves/river1.mp3",
-          "/sounds/riversWaves/river2.mp3",
-          "/sounds/riversWaves/waves1.mp3",
-          "/sounds/riversWaves/waves2.mp3"
+        [
+          "couplets0",
+          "couplets1",
+          "couplets2",
+          "couplets3"
         ],
-        "weather": [
-          "/sounds/weather/weather1.mp3",
-          "/sounds/weather/weather2.mp3",
-          "/sounds/weather/weather3.mp3",
-          "/sounds/weather/weather4.mp3"
+        [
+          "There once was a old man from earth.\n He said, 'See the great butterworth!' \n It was rather damp, \n But not very unclamp,\n He couldn't say no to the wentworth.",
+          "limerick1",
+          "limerick2",
+          "limerick3"
         ]
-      },
-  "audio": {
-    "birds": [
-      "/sounds/birds/birds1.mp3",
-      "/sounds/birds/birds2.mp3",
-      "/sounds/birds/birds3.mp3",
-      "/sounds/birds/birds4.mp3"
-    ],
-    "riversWaves": [
-      "/sounds/riversWaves/river1.mp3",
-      "/sounds/riversWaves/river2.mp3",
-      "/sounds/riversWaves/waves1.mp3",
-      "/sounds/riversWaves/waves2.mp3"
-    ],
-    "weather": [
-      "/sounds/weather/weather1.mp3",
-      "/sounds/weather/weather2.mp3",
-      "/sounds/weather/weather3.mp3",
-      "/sounds/weather/weather4.mp3"
+      ],
+    
+      "sounds": [
+      [
+        "/sounds/birds/birds1.mp3",
+        "/sounds/birds/birds2.mp3",
+        "/sounds/birds/birds3.mp3",
+        "/sounds/birds/birds4.mp3"
+      ],
+      [
+        "/sounds/riversWaves/river1.mp3",
+        "/sounds/riversWaves/river2.mp3",
+        "/sounds/riversWaves/waves1.mp3",
+        "/sounds/riversWaves/waves2.mp3"
+      ],
+      [
+        "/sounds/weather/weather1.mp3",
+        "/sounds/weather/weather2.mp3",
+        "/sounds/weather/weather3.mp3",
+        "/sounds/weather/weather4.mp3"
+      ]
     ]
-  }
 }

@@ -1,30 +1,47 @@
 import React, { Component } from "react";
+import axios from "axios"
 import Category from "./Category";
 
 export class CategoryContainer extends Component {
   state = {
-    imageCategory: null,
-    textCategory: null,
-    soundCategory: null
+    images: null,
+    texts: null,
+    sounds: null,
+    imageCategory: 0,
+    textCategory: 0,
+    soundCategory: 0
   };
 
   handleChecked = element => {
+    console.clear();
     console.log("Image: " + this.state.imageCategory.state.currentCategory);
     console.log("Text: " + this.state.textCategory.state.currentCategory);
     console.log("Sound: " + this.state.soundCategory.state.currentCategory);
   };
 
   componentDidMount() {
+    // Set up refs
     this.setState(state => {
       state.imageCategory = this.refs.images;
       state.textCategory = this.refs.texts;
       state.soundCategory = this.refs.sounds;
     });
+    // Grab resource paths from JSON
+    axios.get(`/resource.json`).then(res => {
+      const images = res.data.images;
+      this.setState({ images });
+      const texts = res.data.texts;
+      this.setState({ texts });
+      const audio = res.data.audio;
+      this.setState({ audio });
+
+      console.log(res.data.images[0]);
+    });
   }
 
   render() {
     return (
-      <div className="radioButtons">
+      <div className="categoryContainer">
         <Category
           title={"Image"}
           cat1={"Forest and rivers"}
@@ -49,6 +66,7 @@ export class CategoryContainer extends Component {
           parent={this}
           ref="sounds"
         />
+        <button type="submit">Generate</button>
       </div>
     );
   }
