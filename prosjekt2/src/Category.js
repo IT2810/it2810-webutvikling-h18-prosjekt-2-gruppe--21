@@ -26,13 +26,7 @@ export class Category extends Component {
         <div className="radioGroup" id="1">
           <h2>Image</h2>
           <label className="radioButton">Skog og bekkefar</label>
-          <input
-            type="radio"
-            name="radSize"
-            value="small"
-            checked="checked"
-            onClick={() => this.generateIndexArray()}
-          />
+          <input type="radio" name="radSize" value="small" checked="checked" />
           <label className="radioButton">Fugler og hav</label>
           <input type="radio" name="radSize" value="medium" />
           <label className="radioButton">Fjell og vidde</label>
