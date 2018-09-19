@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./Test.css";
-<<<<<<< HEAD
 import { Category } from "./Category.js";
-=======
->>>>>>> 74555e006a73354190d5577154c562fef07673d9
 
 class Test extends Component {
   render() {
@@ -22,11 +19,7 @@ class Test extends Component {
           <div className="poem" />
         </div>
         <div className="categories">
-<<<<<<< HEAD
           <Category />
-=======
-          <h1>TEST</h1>
->>>>>>> 74555e006a73354190d5577154c562fef07673d9
         </div>
       </div>
     );
