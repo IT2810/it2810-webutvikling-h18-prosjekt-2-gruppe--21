@@ -4,7 +4,14 @@ import "./Test.css";
 import { Category } from "./Category.js";
 import { Image } from "./Image.js";
 
+let imageDiv;
+
 class Test extends Component {
+  constructor(props) {
+    super(props);
+    this.myInput = React.createRef();
+  }
+
   render() {
     return (
       <div className="grid-container">
@@ -26,14 +33,7 @@ class Test extends Component {
               <h2>Tab 4</h2>
             </div>
           </div>
-          <div
-            className="image"
-            style={{
-              width: "100%",
-              height: "60%",
-              border: "2px solid black"
-            }}
-          >
+          <div className="image" ref={this.myInput}>
             <Image />
           </div>
           <div className="poem" />
