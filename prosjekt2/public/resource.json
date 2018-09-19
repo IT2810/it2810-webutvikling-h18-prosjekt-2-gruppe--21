@@ -1,0 +1,34 @@
+{ 
+    "images" : 
+    [
+      "/img/0.svg",
+      "/img/1.svg",
+      "/img/2.svg"
+    ],
+    "texts" : [
+      "See the snapping of the jockey, I think he's angry at the kawasaki.",
+      "He finds it hard to see the goat, Overshadowed by the jolly frock coat.",
+      "Who is that prowling near the octopus? think it'd like to eat the sea fuss."
+    ],
+    "audio" : {
+        "birds" : [
+            "/sounds/birds/birds1.mp3",
+            "/sounds/birds/birds2.mp3",
+            "/sounds/birds/birds3.mp3",
+            "/sounds/birds/birds4.mp3"
+        ],
+        "riversWaves" : [
+            "/sounds/riversWaves/river1.mp3",
+            "/sounds/riversWaves/river2.mp3",
+            "/sounds/riversWaves/waves1.mp3",
+            "/sounds/riversWaves/waves2.mp3"
+        ],
+        "weather" : [
+            "/sounds/weather/weather1.mp3",
+            "/sounds/weather/weather2.mp3",
+            "/sounds/weather/weather3.mp3",
+            "/sounds/weather/weather4.mp3"
+        ]
+    }
+  }
+    
