@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./categories.css";
 
 export default class CategoryList extends Component {
   state = {
@@ -9,11 +11,8 @@ export default class CategoryList extends Component {
     currentCategory: 0
   };
 
-
   onChecked = categoryIndex => {
-    this.setState(
-      { currentCategory: categoryIndex },
-    );
+    this.setState({ currentCategory: categoryIndex });
   };
 
   render() {
@@ -22,7 +21,7 @@ export default class CategoryList extends Component {
         <h2>{this.props.title}</h2>
         <input
           type="radio"
-//          name={this.state.title}
+          //          name={this.state.title}
           onChange={() => this.onChecked(0)}
           checked={this.state.currentCategory === 0}
         />
@@ -30,7 +29,7 @@ export default class CategoryList extends Component {
         <br />
         <input
           type="radio"
-//          name={this.state.title}
+          //          name={this.state.title}
           onChange={() => this.onChecked(1)}
           checked={this.state.currentCategory === 1}
         />
@@ -38,7 +37,7 @@ export default class CategoryList extends Component {
         <br />
         <input
           type="radio"
-//          name={this.state.title}
+          //          name={this.state.title}
           onChange={() => this.onChecked(2)}
           checked={this.state.currentCategory === 2}
         />

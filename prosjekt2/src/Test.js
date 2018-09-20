@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Test.css";
 import { CategoryListContainer } from "./CategoryListContainer.js";
 import { Image } from "./Image.js";
+import { Poem } from "./Poem.js";
+
+let imageDiv;
 
 class Test extends Component {
   state = {
@@ -34,17 +37,12 @@ class Test extends Component {
               <h2>Tab 4</h2>
             </div>
           </div>
-          <div
-            className="image"
-            style={{
-              width: "100%",
-              height: "60%",
-              border: "2px solid black"
-            }}
-          >
+          <div className="image" ref={this.myInput}>
             <Image />
           </div>
-          <div className="poem" />
+          <div className="poem">
+            <Poem />
+          </div>
         </div>
         <div className="categories" />
         <CategoryListContainer parent={this} />
