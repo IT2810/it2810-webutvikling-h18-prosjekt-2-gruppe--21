@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Test.css";
 
 export default class CategoryList extends Component {
   state = {
@@ -15,7 +16,7 @@ export default class CategoryList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="categories">
         <h2>{this.props.title}</h2>
         <input
           type="radio"

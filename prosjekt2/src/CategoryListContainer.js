@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Category from "./CategoryList";
+import "./Test.css";
 
 export class CategoryListContainer extends Component {
   constructor(props) {
@@ -79,28 +80,30 @@ export class CategoryListContainer extends Component {
 
   render() {
     return (
-      <div className="categoryContainer">
-        <Category
-          title={"Image"}
-          cat1={"Forest"}
-          cat2={"Mountain"}
-          cat3={"Sea"}
-          ref="images"
-        />
-        <Category
-          title={"Texts"}
-          cat1={"TextCat1"}
-          cat2={"TextCat2"}
-          cat3={"TextCat3"}
-          ref="texts"
-        />
-        <Category
-          title={"Sounds"}
-          cat1={"Birds"}
-          cat2={"Rivers and Waves"}
-          cat3={"Weather"}
-          ref="sounds"
-        />
+      <div>
+        <div className="category-container">
+          <Category
+            title={"Image"}
+            cat1={"Forest"}
+            cat2={"Mountain"}
+            cat3={"Sea"}
+            ref="images"
+          />
+          <Category
+            title={"Texts"}
+            cat1={"Haiku"}
+            cat2={"Limericks"}
+            cat3={"Rhymes"}
+            ref="texts"
+          />
+          <Category
+            title={"Sounds"}
+            cat1={"Birds"}
+            cat2={"Rivers and Waves"}
+            cat3={"Weather"}
+            ref="sounds"
+          />
+        </div>
         <button type="submit" onClick={() => this.handleCategorySubmit()}>
           Generate
         </button>

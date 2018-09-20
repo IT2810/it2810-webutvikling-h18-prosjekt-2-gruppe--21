@@ -66,17 +66,19 @@ class Test extends Component {
             <Tab ref={this.tab2} tabIndex="2" tabTitle="3" parent={this} />
             <Tab ref={this.tab3} tabIndex="3" tabTitle="4" parent={this} />
           </div>
-          <div className="image">
-            <Image ref="image" />
-          </div>
-          <div className="poem">
-            <Poem ref="poem" />
-          </div>
-          <div>
-            <Audio ref="audio" />
+          <div className="main-art">
+            <div className="image">
+              <Image ref="image" />
+            </div>
+            <div className="poem">
+              <Poem ref="poem" />
+            </div>
+            <div>
+              <Audio ref="audio" />
+            </div>
           </div>
         </div>
-        <div className="categories" />
+        <div />
         <CategoryListContainer ref={this.categoryContainer} parent={this} />
       </div>
     );
