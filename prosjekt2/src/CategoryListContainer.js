@@ -37,6 +37,7 @@ export class CategoryListContainer extends Component {
 
   // Called from app to get resource paths from json for tab index supplied
   getResourcePaths = tabIndex => {
+    //console.log(tabIndex);
     let image = this.state.imageJSON[this.refs.images.state.currentCategory][
       this.state.imageTabIndexes[tabIndex]
     ];
