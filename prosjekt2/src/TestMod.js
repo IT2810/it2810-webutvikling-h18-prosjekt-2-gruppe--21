@@ -6,13 +6,13 @@ import { Image } from "./Image";
 class Test extends Component {
   state = {
     tabindex: 0
-  }
+  };
 
-  loadResources = (CategoryContainer) => {
+  loadResources = CategoryContainer => {
     let paths = CategoryContainer.getResourcePaths(this.state.tabindex);
     console.log(paths);
-  }
-  
+  };
+
   render() {
     return (
       <div className="grid-container">
@@ -42,15 +42,13 @@ class Test extends Component {
               border: "2px solid black"
             }}
           >
-            <Image ref="image"/>
+            <Image ref="image" />
           </div>
           <div className="poem" ref="poem" />
         </div>
         <audio ref="audio" autoPlay={true} />
         <div className="categories" />
-        <CategoryListContainer 
-            parent={this}
-        />
+        <CategoryListContainer parent={this} />
       </div>
     );
   }
