@@ -2,29 +2,16 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import axios from "axios";
 
+let element = "";
 export class Poem extends Component {
+  state = { texts: [] };
 
-    state = {
-        data: [] 
+  render() {
+    console.log(this.state.texts);
+    let string = "";
+    for (var i = 0; i < this.state.texts.length; i++) {
+      string += this.state.texts[i] + "<br />";
     }
-
-    componentDidMount() {
-        axios.get("/text/poem1.json")
-        .then(res => {
-            const data = res.data;
-            this.setState({ data });
-        })
-    }
-
-
-
-    render() {
-        let data = this.state.data;
-        console.log(data);
-        return (
-            <h2> </h2>
-        );
-   }
-
+    return <h2 dangerouslySetInnerHTML={{ __html: string }} />;
+  }
 }
-
