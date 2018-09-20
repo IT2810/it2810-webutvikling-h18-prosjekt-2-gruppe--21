@@ -57,6 +57,7 @@ class Test extends Component {
     let paths = CategoryContainer.getResourcePaths(this.state.tabIndex);
     this.refs.image.setState({ resourcepath: paths[0] });
     this.refs.audio.setState({ resourcepath: paths[2] });
+    this.refs.poem.setState({ texts: paths[1] });
   };
 
   render() {
@@ -82,7 +83,7 @@ class Test extends Component {
             <Image ref="image" />
           </div>
           <div className="poem">
-            <Poem />
+            <Poem ref="poem" />
           </div>
           <div>
             <Audio ref="audio" />

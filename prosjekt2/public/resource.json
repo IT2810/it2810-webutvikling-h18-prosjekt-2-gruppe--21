@@ -1,63 +1,103 @@
 {
-    "images": [
-        [
-          "/img/forest0.svg",
-          "/img/forest1.svg",
-          "/img/forest2.svg",
-          "/img/forest3.svg"
-        ],
-        [
-          "/img/mountain0.svg",
-          "/img/mountain1.svg",
-          "/img/mountain2.svg",
-          "/img/mountain3.svg"
-        ],
-        [
-          "/img/sea0.svg",
-          "/img/sea1.svg",
-          "/img/sea2.svg",
-          "/img/sea3.svg"
-        ]
-      ],
-      "texts" : [
-        [
-          "haiku0",
-          "haiku1",
-          "haiku2",
-          "haiku3"
-        ],
-        [
-          "couplets0",
-          "couplets1",
-          "couplets2",
-          "couplets3"
-        ],
-        [
-          "There once was a old man from earth.\n He said, 'See the great butterworth!' \n It was rather damp, \n But not very unclamp,\n He couldn't say no to the wentworth.",
-          "limerick1",
-          "limerick2",
-          "limerick3"
-        ]
-      ],
-    
-      "sounds": [
+  "images": [
+    [
+      "/img/forest0.svg",
+      "/img/forest1.svg",
+      "/img/forest2.svg",
+      "/img/forest3.svg"
+    ],
+    [
+      "/img/mountain0.svg",
+      "/img/mountain1.svg",
+      "/img/mountain2.svg",
+      "/img/mountain3.svg"
+    ],
+    ["/img/sea0.svg", "/img/sea1.svg", "/img/sea2.svg", "/img/sea3.svg"]
+  ],
+  "texts": [
+    [
+      ["Old pond", "A frog leaps", "Sound of water"],
       [
-        "/sounds/birds/birds1.mp3",
-        "/sounds/birds/birds2.mp3",
-        "/sounds/birds/birds3.mp3",
-        "/sounds/birds/birds4.mp3"
+        "Last mountain autumn",
+        "A swiss, a wet deer walks",
+        "before the taxman"
       ],
       [
-        "/sounds/riversWaves/river1.mp3",
-        "/sounds/riversWaves/river2.mp3",
-        "/sounds/riversWaves/waves1.mp3",
-        "/sounds/riversWaves/waves2.mp3"
+        "Timber wintertime",
+        "A gray, strong squirrel slithers",
+        "at the perfect branch"
       ],
       [
-        "/sounds/weather/weather1.mp3",
-        "/sounds/weather/weather2.mp3",
-        "/sounds/weather/weather3.mp3",
-        "/sounds/weather/weather4.mp3"
+        "Cheery summertime",
+        " A vast, thundery sea flaps",
+        "in spite of the calm"
+      ]
+    ],
+    [
+      [
+        "I am sorry I've been such a grump",
+        "To be honest I feel like a chump",
+        "But I hope you can see",
+        "that it's not you, it's me",
+        "I'm in love with the Mighty Black Stump"
+      ],
+      [
+        "There once was an Aussie named Brady",
+        "Who had the same name as a lady",
+        "Met a Yankee called Grey",
+        "And said to him hey",
+        "Let's talk on the internet maybe"
+      ],
+      [
+        "There once was a robot called Grey",
+        "And you might find it odd when I say",
+        "Though he loved automation,",
+        "flags and education",
+        "He always led Brady astray"
+      ],
+      [
+        "They may both have a passion for flagging",
+        "And some freebooting had their hearts sagging",
+        "But when they asked around",
+        "They surprisingly found",
+        "That they're known for the term humblebragging"
+      ]
+    ],
+    [
+      [
+        "The teacher shudders at the empty duck",
+        "He wants to leave but she wants the truck."
+      ],
+      ["See the eating of the teacher,", "I think he's angry at the feature."],
+      [
+        "She's not alone she brings a lorry,",
+        "a pet chimpanzee, and lots of inventory."
+      ],
+      [
+        "Who is that frightening near the spouse?",
+        "I think she'd like to eat the slaughterhouse."
       ]
     ]
+  ],
+
+  "sounds": [
+    [
+      "/sounds/birds/birds1.mp3",
+      "/sounds/birds/birds2.mp3",
+      "/sounds/birds/birds3.mp3",
+      "/sounds/birds/birds4.mp3"
+    ],
+    [
+      "/sounds/riversWaves/river1.mp3",
+      "/sounds/riversWaves/river2.mp3",
+      "/sounds/riversWaves/waves1.mp3",
+      "/sounds/riversWaves/waves2.mp3"
+    ],
+    [
+      "/sounds/weather/weather1.mp3",
+      "/sounds/weather/weather2.mp3",
+      "/sounds/weather/weather3.mp3",
+      "/sounds/weather/weather4.mp3"
+    ]
+  ]
 }
