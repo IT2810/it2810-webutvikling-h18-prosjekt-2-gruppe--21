@@ -30,17 +30,6 @@ class Test extends Component {
   handleTabClicked = clickedTab => {
     // update tab activation status
     console.clear();
-    //console.log(clickedTab.state.tabIndex);
-    // for (let i = 0; i < this.state.tabs.length; i++) {
-    //   // eslint-disable-next-line
-    //   if (i == clickedTab.state.tabIndex) {
-    //     clickedTab.setState({ active: true });
-    //     console.log("test");
-    //   } else {
-    //     clickedTab.setState({ active: false });
-    //   }
-    // }
-
     this.state.tabs.forEach(tab => {
       console.log(tab.current.state.active);
       tab.current.setState({ active: false });
@@ -54,10 +43,11 @@ class Test extends Component {
   };
 
   loadResources = CategoryContainer => {
-    let paths = CategoryContainer.getResourcePaths(this.state.tabIndex);
+    let paths = CategoryContainer.getResourcePaths(this.state.activeTabIndex);
+    console.log(paths);
     this.refs.image.setState({ resourcepath: paths[0] });
-    this.refs.audio.setState({ resourcepath: paths[2] });
     this.refs.poem.setState({ texts: paths[1] });
+    this.refs.audio.setState({ resourcepath: paths[2] });
   };
 
   render() {
