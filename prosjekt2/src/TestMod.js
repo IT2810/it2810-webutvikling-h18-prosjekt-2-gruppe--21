@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import "./Test.css";
-import { CategoryContainer } from "./CategoryContainer.js";
-import { Image } from "./Image.js";
+import { CategoryListContainer } from "./CategoryListContainer.js";
+import { Image } from "./Image";
 
 class Test extends Component {
+  state = {
+    tabindex: 0
+  }
+
+  loadResources = (CategoryContainer) => {
+    let paths = CategoryContainer.getResourcePaths(this.state.tabindex);
+    console.log(paths);
+  }
+  
   render() {
     return (
       <div className="grid-container">
@@ -33,12 +42,15 @@ class Test extends Component {
               border: "2px solid black"
             }}
           >
-            <Image />
+            <Image ref="image"/>
           </div>
-          <div className="poem" />
+          <div className="poem" ref="poem" />
         </div>
+        <audio ref="audio" autoPlay={true} />
         <div className="categories" />
-        <CategoryContainer />
+        <CategoryListContainer 
+            parent={this}
+        />
       </div>
     );
   }
