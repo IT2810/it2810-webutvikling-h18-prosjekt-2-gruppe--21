@@ -28,16 +28,13 @@ class Test extends Component {
   };
 
   handleTabClicked = clickedTab => {
-    // update tab activation status
-    console.clear();
     this.state.tabs.forEach(tab => {
-      console.log(tab.current.state.active);
       tab.current.setState({ active: false });
     });
 
     clickedTab.setState({ active: true });
 
-    this.setState({ tabIndex: clickedTab.state.tabIndex }, () => {
+    this.setState({ activeTabIndex: clickedTab.state.tabIndex }, () => {
       this.loadResources(this.categoryContainer.current);
     });
   };
