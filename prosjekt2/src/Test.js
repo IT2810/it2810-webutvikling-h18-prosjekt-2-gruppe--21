@@ -4,6 +4,7 @@ import "./Test.css";
 import { CategoryListContainer } from "./CategoryListContainer.js";
 import { Image } from "./Image.js";
 import { Poem } from "./Poem.js";
+import { Audio } from "./Audio.js";
 
 let imageDiv;
 
@@ -16,6 +17,7 @@ class Test extends Component {
     let paths = CategoryContainer.getResourcePaths(this.state.tabindex);
     console.log(paths);
     this.refs.image.setState({ resourcepath: paths[0] });
+    this.refs.audio.setState({ resourcepath: paths[2] });
   };
 
   render() {
@@ -44,6 +46,9 @@ class Test extends Component {
           </div>
           <div className="poem">
             <Poem />
+          </div>
+          <div>
+            <Audio ref="audio" />
           </div>
         </div>
         <div className="categories" />
