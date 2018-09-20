@@ -3,7 +3,13 @@ import React, { Component } from "react";
 export class Image extends Component {
   constructor(props) {
     super(props);
+
+    this.state.resourcepath = this.props.resourcepath;
   }
+
+  state = {
+    resourcepath: ""
+  };
 
   componentDidMount() {}
 
@@ -15,7 +21,7 @@ export class Image extends Component {
         height="100%"
         preserveAspectRatio="none"
       >
-        <image href="/img/mountain2.svg" height="100%" width="100%" />
+        <image href={this.state.resourcepath} height="100%" width="100%" />
       </svg>
     );
   }

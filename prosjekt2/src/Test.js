@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import "./Test.css";
 import { CategoryListContainer } from "./CategoryListContainer.js";
 import { Image } from "./Image.js";
@@ -14,6 +15,7 @@ class Test extends Component {
   loadResources = CategoryContainer => {
     let paths = CategoryContainer.getResourcePaths(this.state.tabindex);
     console.log(paths);
+    this.refs.image.setState({ resourcepath: paths[0] });
   };
 
   render() {
@@ -37,8 +39,8 @@ class Test extends Component {
               <h2>Tab 4</h2>
             </div>
           </div>
-          <div className="image" ref={this.myInput}>
-            <Image />
+          <div className="image">
+            <Image ref="image" />
           </div>
           <div className="poem">
             <Poem />
