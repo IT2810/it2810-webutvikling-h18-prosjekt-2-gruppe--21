@@ -33,15 +33,13 @@ Layouten er fleksibel, den endrer seg også avhengig av skjermstørrelsen som br
 ## Testing:
 Applikasjonen er testet på tre forskjellige enheter: En ordinær pc, en mobil (Pixel 2) og et nettbrett (iPad Pro). 
 * Ordinær PC:
-![PC testing](documentation_img/pc.png)
-
+<img src="documentation_img/pc.png" width="300">
 * iPad Pro:
-![iPad Pro testing](documentation_img/ipad_pro.png)
-
-* Pixel 2:
-![Pixel 2 testing](documentation_img/pixel2_1.png)
-![Pixel 2 testing continued](documentation_img/pixel2_2.png)
-
+<br/>
+<img src="documentation_img/ipad_pro.png" width="250">
+* Pixel 2: <br/>
+<img src="documentation_img/Pixel2_1.png" width="150">
+<img src="documentation_img/Pixel2_2.png" width="150">
 
 Vi testet siden systematisk ved å gå inn på nettsiden og verifisere at det er fire forskjellige tabs med de kategoriene som er satt som standard. Deretter forandre hvilke kategorier som er aktive og generer en ny bildeutstilling. Så verifiserer vi om disse utstillingene matcher de kategoriene som er huket av. Vi gjør dette for ulike skjermstørrelser og i ulike browsere. Vi har cross-browser testet websiden i Firefox, Chrome og Opera. Der funket alt fint, men i Safari og Edge så fungerer ikke svg-bildene som forventet.
 
