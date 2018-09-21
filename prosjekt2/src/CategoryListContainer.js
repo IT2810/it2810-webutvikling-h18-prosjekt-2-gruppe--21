@@ -29,13 +29,6 @@ export class CategoryListContainer extends Component {
     return idxArray;
   };
 
-  // Generates and updates 4 tab index arrays, representing the indexes to use for each tab
-  updateRandomizedTabIndexes = () => {
-    this.setState({ imageTabIndexes: this.getShuffledIndexes() });
-    this.setState({ textTabIndexes: this.getShuffledIndexes() });
-    this.setState({ soundTabIndexes: this.getShuffledIndexes() });
-  };
-
   // Called from app to get resource paths from json for tab index supplied
   getResourcePaths = tabIndex => {
     //console.log(tabIndex);
@@ -51,9 +44,15 @@ export class CategoryListContainer extends Component {
     return [image, text, sound];
   };
 
+  // Generate new indexes and call loadresources, chained callbacks
   handleCategorySubmit = () => {
-    this.updateRandomizedTabIndexes();
-    this.state.parent.loadResources(this);
+    this.setState({ imageTabIndexes: this.getShuffledIndexes() }, () => {
+      this.setState({ textTabIndexes: this.getShuffledIndexes() }, () => {
+        this.setState({ soundTabIndexes: this.getShuffledIndexes() }, () => {
+          this.state.parent.loadResources(this);
+        });
+      });
+    });
   };
 
   componentDidMount() {

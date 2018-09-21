@@ -41,7 +41,7 @@ class App extends Component {
 
   loadResources = CategoryContainer => {
     let paths = CategoryContainer.getResourcePaths(this.state.activeTabIndex);
-    console.log(paths);
+    console.log(this.state.activeTabIndex);
     this.refs.image.setState({ resourcepath: paths[0] });
     this.refs.poem.setState({ texts: paths[1] });
     this.refs.audio.setState({ resourcepath: paths[2] });
