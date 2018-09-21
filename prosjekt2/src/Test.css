@@ -33,6 +33,12 @@ h1 {
   color: white;
   border: solid 0.2em rgb(12, 3, 65);
 }
+.tab-active {
+  box-shadow: inset 0px 0px 15px rgb(12, 3, 65);
+}
+.tab-active:hover {
+  box-shadow: inset 0px 0px 15px lightblue;
+}
 .main-art {
   display: flex;
   flex-direction: column;
@@ -47,13 +53,14 @@ h1 {
 }
 .poem {
   justify-content: center;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 2em;
   border: solid;
   border-radius: 2em;
   text-align: center;
+  font-size: 15px;
 }
 .category-container {
   display: flex;
@@ -95,21 +102,34 @@ button:hover {
   border: solid 0.2em rgb(12, 3, 65);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   .grid-container {
     flex-direction: row;
   }
   .svg-container {
-    width: 70vw;
+    width: 60vw;
+    max-height: 50vh;
+    margin-right: 3vw;
+  }
+  .poem {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 12px;
+    padding: 2em;
   }
   .category-container {
-    margin-top: 15vw;
-    margin-left: 4vw;
+    margin-top: 20vh;
     width: 20vw;
   }
   .categories {
     width: 100%;
     margin: 0;
     margin-bottom: 1em;
+  }
+  button {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
