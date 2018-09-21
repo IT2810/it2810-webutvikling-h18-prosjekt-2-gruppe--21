@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 //import ReactDOM from "react-dom";
+import axios from 'axios';
 import "./style_global.css";
 import { CategoryListContainer } from "./CategoryListContainer";
 import { Image } from "./Image";
@@ -41,9 +42,19 @@ class App extends Component {
 
   loadResources = CategoryContainer => {
     let paths = CategoryContainer.getResourcePaths(this.state.activeTabIndex);
-    console.log(this.state.activeTabIndex);
+    //console.log(paths);
+    
     this.refs.image.setState({ resourcepath: paths[0] });
-    this.refs.poem.setState({ texts: paths[1] });
+
+    let string = "";
+    axios.get(paths[1]).then(res => {
+      for (var i = 0; i < res.data.length; i++) {
+        string += res.data[i] + "<br />";
+      }
+    }).then(() => {
+      this.refs.poem.setState({ text: string });
+    });
+
     this.refs.audio.setState({ resourcepath: paths[2] });
   };
 

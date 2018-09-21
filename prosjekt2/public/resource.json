@@ -16,67 +16,22 @@
   ],
   "texts": [
     [
-      ["Old pond", "A frog leaps", "Sound of water"],
-      [
-        "Last mountain autumn",
-        "A swiss, a wet deer walks",
-        "before the taxman"
-      ],
-      [
-        "Timber wintertime",
-        "A gray, strong squirrel slithers",
-        "at the perfect branch"
-      ],
-      [
-        "Cheery summertime",
-        " A vast, thundery sea flaps",
-        "in spite of the calm"
-      ]
+      "texts/haiku/haiku0.json",
+      "texts/haiku/haiku1.json",
+      "texts/haiku/haiku2.json",
+      "texts/haiku/haiku3.json"
     ],
     [
-      [
-        "I am sorry I've been such a grump",
-        "To be honest I feel like a chump",
-        "But I hope you can see",
-        "that it's not you, it's me",
-        "I'm in love with the Mighty Black Stump"
-      ],
-      [
-        "There once was an Aussie named Brady",
-        "Who had the same name as a lady",
-        "Met a Yankee called Grey",
-        "And said to him hey",
-        "Let's talk on the internet maybe"
-      ],
-      [
-        "There once was a robot called Grey",
-        "And you might find it odd when I say",
-        "Though he loved automation,",
-        "flags and education",
-        "He always led Brady astray"
-      ],
-      [
-        "They may both have a passion for flagging",
-        "And some freebooting had their hearts sagging",
-        "But when they asked around",
-        "They surprisingly found",
-        "That they're known for the term humblebragging"
-      ]
+      "texts/limerick/limerick0.json",
+      "texts/limerick/limerick1.json",
+      "texts/limerick/limerick2.json",
+      "texts/limerick/limerick3.json"
     ],
     [
-      [
-        "The teacher shudders at the empty duck",
-        "He wants to leave but she wants the truck."
-      ],
-      ["See the eating of the teacher,", "I think he's angry at the feature."],
-      [
-        "She's not alone she brings a lorry,",
-        "a pet chimpanzee, and lots of inventory."
-      ],
-      [
-        "Who is that frightening near the spouse?",
-        "I think she'd like to eat the slaughterhouse."
-      ]
+      "texts/rhyme/rhyme0.json",
+      "texts/rhyme/rhyme1.json",
+      "texts/rhyme/rhyme2.json",
+      "texts/rhyme/rhyme3.json"
     ]
   ],
 
