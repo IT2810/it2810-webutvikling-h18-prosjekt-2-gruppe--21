@@ -1,10 +1,3 @@
-Teknologier som brukes:
-
-* REACT for UI
-* AXIOS for AJAX
-
-
-# Tema for utstilling: Natur
 
 # Innhold og Funksjonalitet:
 
