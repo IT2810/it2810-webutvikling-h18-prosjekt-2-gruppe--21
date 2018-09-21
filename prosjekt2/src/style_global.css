@@ -133,3 +133,17 @@ button:hover {
     margin-right: 15%;
   }
 }
+
+
+.radioButtons {
+  margin-left: 2vw;
+}
+
+.radioGroup {
+  padding-top: 5vh;
+}
+
+.radioButton {
+
+  display: block;
+}

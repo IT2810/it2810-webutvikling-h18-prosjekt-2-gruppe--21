@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Test.css";
 
 export class Tab extends Component {
   constructor(props) {

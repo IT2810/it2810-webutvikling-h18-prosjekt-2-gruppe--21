@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Test.css";
 
 export default class CategoryList extends Component {
   state = {

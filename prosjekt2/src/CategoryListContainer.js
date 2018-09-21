@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Category from "./CategoryList";
-import "./Test.css";
+
 
 export class CategoryListContainer extends Component {
   constructor(props) {
